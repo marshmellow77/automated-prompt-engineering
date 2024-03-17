@@ -1,0 +1,111 @@
+{
+  "prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "A tank contains 6000 liters of water, 2000 liters evaporated, and then 3500 liters were drained by Bob. How many liters are in the tank if it now rains for 30 minutes and every 10 minutes 350 liters of rain are added to the tank?",
+        "rationale": "find the total amount of water in the tank. First, 2000 liters evaporated from the initial 6000 liters, leaving 6000 - 2000 = 4000 liters. Next, Bob drained 3500 liters, resulting in 4000 - 3500 = 500 liters.  Since it rained for 30 minutes, and 350 liters are added every 10 minutes, a total of 350 x 3 = 1050 liters were added.  Therefore, the tank now contains 500 + 1050 = 1550 liters.",
+        "answer": "1550"
+      },
+      {
+        "augmented": true,
+        "question": "Louise is baking cakes for a gathering. She needs 60 cakes in total, and has already produced half this many. Today, she calculates how many cakes she has left to make and bakes half this amount. The next day, she again calculates how many cakes she has left to make and bakes a third of this amount. How many more cakes does Louise need to bake?",
+        "rationale": "determine the number of cakes Louise still needs to bake. \n\n1. **Initial cakes needed:** 60 cakes\n2. **Cakes already baked:** 60 \/ 2 = 30 cakes\n3. **Cakes left after first day:** 60 - 30 = 30 cakes\n4. **Cakes baked on the second day:** 30 \/ 2 = 15 cakes\n5. **Cakes left after second day:** 30 - 15 = 15 cakes\n6. **Cakes baked on the third day:** 15 \/ 3 = 5 cakes \n7. **Cakes still needed:** 15 - 5 = 10 cakes",
+        "answer": "10"
+      },
+      {
+        "augmented": true,
+        "question": "Julia had to make 6 cakes for the party. Each cake takes 12 minutes to mix and needs 9 more minutes to bake than mix. Then it takes 6 more minutes to cool and decorate than to bake. How many hours will it take to make all 6 cakes?",
+        "rationale": "calculate the total time. First, we find the baking time by adding 9 minutes to the 12 minutes of mixing, resulting in 12 + 9 = 21 minutes. Then, we add 6 minutes for cooling and decorating, giving us 21 + 6 = 27 minutes. To get the total time for one cake, we add the mixing, baking, and decorating times: 12 + 21 + 27 = 60 minutes. Since 1 hour has 60 minutes, one cake takes 1 hour to make.  Therefore, 6 cakes will take 6 x 1 = 6 hours.",
+        "answer": "6"
+      },
+      {
+        "augmented": true,
+        "question": "Kendra tracks the different species of birds they spot on their birdwatching trip. On Monday they visited 5 sites and saw an average of 7 birds at each site. On Tuesday, Kendra visited 5 sites and saw an average of 5 birds at each site. On Wednesday visited 10 sites and saw an average of 8 birds at each site. On average, how many different birds did Kendra see on each site?",
+        "rationale": "calculate the total number of birds seen and then divide by the total number of sites visited. \n\n**Step 1: Calculate total birds seen on Monday:** 5 sites x 7 birds\/site = 35 birds\n\n**Step 2: Calculate total birds seen on Tuesday:** 5 sites x 5 birds\/site = 25 birds\n\n**Step 3: Calculate total birds seen on Wednesday:** 10 sites x 8 birds\/site = 80 birds\n\n**Step 4: Calculate total birds seen:** 35 birds + 25 birds + 80 birds = 140 birds\n\n**Step 5: Calculate total sites visited:** 5 sites + 5 sites + 10 sites = 20 sites\n\n**Step 6: Calculate average birds per site:** 140 birds \/ 20 sites = 7 birds\/site",
+        "answer": "7"
+      },
+      {
+        "augmented": true,
+        "question": "Central Park had 8 more than half of the number of trash cans as in Veteran's Park.  Then one night, someone took half of the trash cans from Central Park and put them in Veteran's Park.  If originally there were 24 trash cans in Veteran's Park, how many trash cans are now in Veteran's Park?",
+        "rationale": "find the number of trash cans in Veteran's Park after the redistribution. \n\n1. **Calculate half the number of trash cans in Veteran's Park:** 24 \/ 2 = 12 trash cans.\n2. **Add 8 to represent the extra trash cans in Central Park:** 12 + 8 = 20 trash cans.\n3. **Divide by 2 to find the number taken from Central Park:** 20 \/ 2 = 10 trash cans.\n4. **Add the 10 trash cans to Veteran's Park:** 24 + 10 = 34 trash cans.",
+        "answer": "34"
+      },
+      {
+        "augmented": true,
+        "question": "Mr Julien's store has 400 marbles remaining after the previous day's sales. Twenty customers came into the store, and each bought 15 marbles. How many marbles remain in the store?",
+        "rationale": "determine the number of marbles remaining. First, we need to find the total number of marbles purchased by the customers by multiplying the number of customers by the number of marbles each bought: 20 customers x 15 marbles\/customer = 300 marbles. \n\nNow, to find the remaining marbles, we subtract the purchased marbles from the initial amount: 400 marbles - 300 marbles = 100 marbles.",
+        "answer": "100"
+      },
+      {
+        "augmented": true,
+        "question": "The average score on last week's Spanish test was 90.  Marco scored 10% less than the average test score and Margaret received 5 more points than Marco.  What score did Margaret receive on her test?",
+        "rationale": "find Margaret's score. First, find Marco's score by subtracting 10% of the average from the average: 90 - (0.10 x 90) = 81.  Now, add 5 points to Marco's score to find Margaret's score: 81 + 5 = 86.",
+        "answer": "86"
+      }
+    ],
+    "signature_instructions": "Answer math problems with numbers or short phrases.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Answer math problems with numbers or short phrases.",
+    "extended_signature_prefix": "Answer:"
+  },
+  "candidate_programs[1][3].prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Mr. Sanchez found out that 40% of his Grade 5  students got a final grade below B. How many of his students got a final grade of B and above if he has 60 students in Grade 5?",
+        "rationale": "find the number of students who got B and above. First, find the number of students who got below B by multiplying 60 by 40% or 0.40. 60 x 0.40 = 24.  Now, subtract 24 from 60 to find the number of students who got B and above. 60 - 24 = 36.",
+        "answer": "36"
+      },
+      {
+        "question": "Amaya scored 20 marks fewer in Maths than she scored in Arts. She also got 10 marks more in Social Studies than she got in Music. If she scored 70 in Music and scored 1\/10 less in Maths, what's the total number of marks she scored in all the subjects?",
+        "gold_reasoning": "",
+        "answer": "296"
+      },
+      {
+        "question": "Nancy bought a pie sliced it into 8 pieces. She gave 1\/2 to Joe and Darcy, and she gave 1\/4 to Carl. How many slices were left?",
+        "gold_reasoning": "",
+        "answer": "2"
+      }
+    ],
+    "signature_instructions": "Answer math problems with numbers or short phrases.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Answer math problems with numbers or short phrases.",
+    "extended_signature_prefix": "Answer:"
+  },
+  "candidate_programs[2][3].prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "A YouTube video got 3000 likes and 100 more than half as many dislikes. If the video gets 1000 more dislikes and 0 more likes how many dislikes does the video have?",
+        "rationale": "determine the number of dislikes. First, let's find the initial number of dislikes: 3000 \/ 2 = 1500 dislikes. Then, add the 100 additional dislikes: 1500 + 100 = 1600 dislikes. Now, add the 1000 new dislikes to find the final total: 1600 + 1000 = 2600 dislikes.",
+        "answer": "2600"
+      },
+      {
+        "augmented": true,
+        "question": "Tom is binge-watching a show on Netflix. The show has 90 episodes, each one of which is 20 minutes long because there are no commercials. If Tom can spend two hours a day watching the show, how many days will it take him to finish watching the show?",
+        "rationale": "determine how many days it will take Tom to finish the show. First, let's find the total time of the show in minutes by multiplying the number of episodes by the length of each episode: 90 episodes * 20 minutes\/episode = 1800 minutes.\n\nNext, let's convert the time Tom spends watching per day into minutes: 2 hours\/day * 60 minutes\/hour = 120 minutes\/day.\n\nNow, we can divide the total show time by the time Tom watches per day to find the number of days: 1800 minutes \/ 120 minutes\/day = 15 days.",
+        "answer": "15"
+      },
+      {
+        "augmented": true,
+        "question": "Delaney has to catch a bus that leaves at 8:00. a.m to school every day. He always takes 30 minutes to reach the pick-up point from his home. One day he woke up late and left his home at 7:50. How much time did he miss the bus by when he reached the pick-up point?",
+        "rationale": "determine how much time Delaney missed the bus by. First, we need to find out what time Delaney reached the pick-up point by adding the time he took to reach there to the time he left home: 7:50 + 30 minutes = 8:20 a.m. Since the bus leaves at 8:00 a.m., we can find the time missed by subtracting the bus departure time from Delaney's arrival time: 8:20 a.m. - 8:00 a.m. = 20 minutes.",
+        "answer": "20 minutes"
+      }
+    ],
+    "signature_instructions": "Answer math problems with numbers or short phrases.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Answer math problems with numbers or short phrases.",
+    "extended_signature_prefix": "Answer:"
+  }
+}
